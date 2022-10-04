@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F1CCCC"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/lblCantidadCochesMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Coches : 0"
+        android:textColor="#E91E63"
+        android:textSize="30" />
+
+    <Button
+        android:id="@+id/btnCrearCocheMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#874444"
+        android:text="Crear coche"
+        app:icon="@android:drawable/ic_menu_add" />
+
+    <TextView
+        android:id="@+id/lblCantidadMotosMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Motos : 0"
+        android:textColor="#E91E63"
+        android:textSize="30" />
+
+    <Button
+        android:id="@+id/btnCrearMotoMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#874444"
+        android:text="Crear Moto"
+        app:icon="@android:drawable/ic_menu_add" />
+
+    <TextView
+        android:id="@+id/lblCantidadBicisMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Bicis : 0"
+        android:textColor="#E91E63"
+        android:textSize="30" />
+
+    <Button
+        android:id="@+id/btnCrearBiciMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#874444"
+        android:text="Crear bici"
+        app:icon="@android:drawable/ic_menu_add" />
+</LinearLayout>
