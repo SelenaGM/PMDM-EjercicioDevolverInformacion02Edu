@@ -17,15 +17,15 @@
         android:gravity="center"
         android:padding="10dp"
         android:text="Coches : 0"
-        android:textColor="#E91E63"
-        android:textSize="30" />
+        android:textColor="#AD1457"
+        android:textSize="15dp" />
 
     <Button
         android:id="@+id/btnCrearCocheMain"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:backgroundTint="#874444"
-        android:text="Crear coche"
+        android:text="@string/crear_coche"
         app:icon="@android:drawable/ic_menu_add" />
 
     <TextView
@@ -36,8 +36,8 @@
         android:gravity="center"
         android:padding="10dp"
         android:text="Motos : 0"
-        android:textColor="#E91E63"
-        android:textSize="30" />
+        android:textColor="#AD1457"
+        android:textSize="15dp" />
 
     <Button
         android:id="@+id/btnCrearMotoMain"
@@ -56,7 +56,7 @@
         android:padding="10dp"
         android:text="Bicis : 0"
         android:textColor="#E91E63"
-        android:textSize="30" />
+        android:textSize="15dp" />
 
     <Button
         android:id="@+id/btnCrearBiciMain"

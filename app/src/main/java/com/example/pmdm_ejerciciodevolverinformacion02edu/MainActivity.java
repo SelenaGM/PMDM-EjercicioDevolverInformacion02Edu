@@ -51,8 +51,22 @@ public class MainActivity extends AppCompatActivity {
         btnCrearCoche.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-             launcherCoches.launch(new Intent(MainActivity.this,CrearCocheActivity.class));   
+             launcherCoches.launch(new Intent(MainActivity.this,CrearCocheActivity.class));
+
              
+            }
+        });
+        btnCrearMoto.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                launcherMotos.launch(new Intent(MainActivity.this,CrearMotoActivity.class));
+            }
+        });
+
+        btnCrearBici.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                launcherBicis.launch(new Intent(MainActivity.this,CrearBiciActivity.class));
             }
         });
         
@@ -87,9 +101,26 @@ public class MainActivity extends AppCompatActivity {
                 new ActivityResultCallback<ActivityResult>() {
                     @Override
                     public void onActivityResult(ActivityResult result) {
-                        
+                        if(result.getResultCode() == RESULT_OK){
+                            if(result.getData()!= null && result.getData().getExtras()!=null){
+                                MotoModel moto = (MotoModel) result.getData().getExtras().getSerializable("MOTO");
+                                if(moto != null){
+                                    listaMotos.add(moto);
+                                    lblCantidadMotos.setText("Moto: "+listaMotos.size());
+                                }
+                                else{
+                                    Toast.makeText(MainActivity.this, "NO HAY MOTO", Toast.LENGTH_SHORT).show();
+                                    //UN MENSAJE QUE SOLO VES TU EN EL MODO DEBUG
+                                    Log.e("BOBO","Revisa el identificador del Bundle");
+                                }
+                            }
+                        }
+                        else{
+                            Toast.makeText(MainActivity.this, "Activity Cancelada", Toast.LENGTH_SHORT).show();
+                        }
                     }
-                }
+                    }
+
         );
         
         launcherBicis = registerForActivityResult(
@@ -97,9 +128,26 @@ public class MainActivity extends AppCompatActivity {
                 new ActivityResultCallback<ActivityResult>() {
                     @Override
                     public void onActivityResult(ActivityResult result) {
-                        
+                        if(result.getResultCode() == RESULT_OK){
+                            if(result.getData()!= null && result.getData().getExtras()!=null){
+                                BiciModel bici = (BiciModel) result.getData().getExtras().getSerializable("BICI");
+                                if(bici != null){
+                                    listaBicis.add(bici);
+                                    lblCantidadBici.setText("Bicis: "+listaBicis.size());
+                                }
+                                else{
+                                    Toast.makeText(MainActivity.this, "NO HAY BICIS", Toast.LENGTH_SHORT).show();
+                                    //UN MENSAJE QUE SOLO VES TU EN EL MODO DEBUG
+                                    Log.e("BOBO","Revisa el identificador del Bundle");
+                                }
+                            }
+                        }
+                        else{
+                            Toast.makeText(MainActivity.this, "Activity Cancelada", Toast.LENGTH_SHORT).show();
+                        }
                     }
-                }
+                    }
+
         );
         
         

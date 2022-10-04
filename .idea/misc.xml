@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/layout/activity_crear_bici.xml" value="0.3908514492753623" />
         <entry key="app/src/main/res/layout/activity_crear_coche.xml" value="0.3908514492753623" />
         <entry key="app/src/main/res/layout/activity_crear_moto.xml" value="0.3908514492753623" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.3591485507246377" />

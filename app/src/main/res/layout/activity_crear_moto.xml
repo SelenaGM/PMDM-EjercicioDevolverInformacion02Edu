@@ -10,7 +10,7 @@
     tools:context=".CrearMotoActivity">
 
     <EditText
-        android:id="@+id/txtMarcaCrearCoche"
+        android:id="@+id/txtMarcaCrearMoto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
@@ -19,7 +19,7 @@
         android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/txtModeloCrearCoche"
+        android:id="@+id/txtModeloCrearMoto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
@@ -28,13 +28,13 @@
         android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/txtColorCrearCoche"
+        android:id="@+id/txtCcCrearMoto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
         android:ems="10"
-        android:hint="Coche"
-        android:inputType="textPersonName" />
+        android:hint="Cilindrada"
+        android:inputType="number" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -42,16 +42,16 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/btnCancelarCrearCoche"
-            android:layout_width="0dps"
+            android:id="@+id/btnCancelarCrearMoto"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:layout_weight="1"
             android:text="Cancelar" />
 
         <Button
-            android:id="@+id/btnCrearCrearCoche"
-            android:layout_width="0dps"
+            android:id="@+id/btnCrearCrearMoto"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:layout_weight="2"
